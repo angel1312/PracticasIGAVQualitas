@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form id="form">           
+            <p:growl id="msgs" showDetail="true" />
+
+            <h3 style="margin-top:0">Basic</h3>
+            <p:accordionPanel>
+                <p:tab title="La Quinta Ola  Parte I">
+                    <h:panelGrid columns="2" cellpadding="10">
+                        <img src="imagenes/QuintaOla1.png"/>
+                        <h:outputText
+                            value="Cuatro oleadas sucesivas de ataques cada vez 
+                            más mortíferos de alienígenas han dejado la mayor 
+                            parte de la Tierra diezmada. 
+                            La primera ola fue un apagón generalizado en todo el planeta, 
+                            la segunda fue la subida del oleaje,
+                            la tercera ola fue peste y 
+                            la cuarta ola fue cuando los otros (así le decían a los alienígenas)
+                            se hicieron pasar por humanos para infiltrarse entre la gente. 
+                            En este escenario de miedo y desconfianza, Cassie Sullivan,
+                            una adolescente de 16 años, trata de sobrevivir..." />
+                    </h:panelGrid>
+                </p:tab>
+                <p:tab title="El Mar Infinito Parte II">
+                    <h:panelGrid columns="2" cellpadding="10">
+                        <img src="imagenes/Mar Infinito2.png"/>
+                        <h:outputText value="La continuación de una de las novelas de ciencia ficción juveniles más esperadas.
+                                      Cassie no está dispuesta a dejarse vencer y para ello cuenta 
+                                      con insólitos aliados que le permitirán darle un dramático 
+                                      giro a los acontecimientos." />
+                    </h:panelGrid>
+                </p:tab>
+                <p:tab title="La Ultima Estrella Parte III">
+                    <h:panelGrid columns="2" cellpadding="10">
+                        <img src="imagenes/LaUltimaEstrella3.png"/>
+                        <h:outputText value="La última fase de la invasión está a punto de completarse, 
+                                      lloverán bombas sobre las ciudades. 
+                                      El fin de la especie humana está asegurado 
+                                      y Cassie y sus compañeros saben que ha llegado
+                                      el momento de escoger: entre el amor o el miedo, ..." />
+                    </h:panelGrid>
+                </p:tab>
+            </p:accordionPanel>
+
+            <h3>Multiple Selection</h3>
+            <p:accordionPanel multiple="true">
+                <p:tab title="La Quinta Ola  Parte I">
+                    <h:panelGrid columns="2" cellpadding="10">
+                        <img src="imagenes/QuintaOla1.png"/>
+                        <h:outputText
+                            value="Cuatro oleadas sucesivas de ataques cada vez 
+                            más mortíferos de alienígenas han dejado la mayor 
+                            parte de la Tierra diezmada. 
+                            La primera ola fue un apagón generalizado en todo el planeta, 
+                            la segunda fue la subida del oleaje,
+                            la tercera ola fue peste y 
+                            la cuarta ola fue cuando los otros (así le decían a los alienígenas)
+                            se hicieron pasar por humanos para infiltrarse entre la gente. 
+                            En este escenario de miedo y desconfianza, Cassie Sullivan,
+                            una adolescente de 16 años, trata de sobrevivir..." />
+                    </h:panelGrid>
+                </p:tab>
+                <p:tab title="El Mar Infinito Parte II">
+                    <h:panelGrid columns="2" cellpadding="10">
+                        <img src="imagenes/Mar Infinito2.png"/>
+                        <h:outputText value="La continuación de una de las novelas de ciencia ficción juveniles más esperadas.
+                                      Cassie no está dispuesta a dejarse vencer y para ello cuenta 
+                                      con insólitos aliados que le permitirán darle un dramático 
+                                      giro a los acontecimientos." />
+                    </h:panelGrid>
+                </p:tab>
+                <p:tab title="La Ultima Estrella Parte III">
+                    <h:panelGrid columns="2"  cellpadding="10">
+                        <img src="imagenes/LaUltimaEstrella3.png"/>
+                        <h:outputText value="La última fase de la invasión está a punto de completarse, 
+                                      lloverán bombas sobre las ciudades. 
+                                      El fin de la especie humana está asegurado 
+                                      y Cassie y sus compañeros saben que ha llegado
+                                      el momento de escoger: entre el amor o el miedo, ..."/>
+                    </h:panelGrid>
+                </p:tab>
+            </p:accordionPanel>
+
+            <h3>On-Demand Loading</h3>
+            <p:accordionPanel dynamic="true" cache="true">
+                <p:tab title="La Quinta Ola  Parte I">
+                    <h:panelGrid columns="2" cellpadding="10">
+                        <img src="imagenes/QuintaOla1.png"/>
+                        <h:outputText
+                            value="Cuatro oleadas sucesivas de ataques cada vez 
+                            más mortíferos de alienígenas han dejado la mayor 
+                            parte de la Tierra diezmada. 
+                            La primera ola fue un apagón generalizado en todo el planeta, 
+                            la segunda fue la subida del oleaje,
+                            la tercera ola fue peste y 
+                            la cuarta ola fue cuando los otros (así le decían a los alienígenas)
+                            se hicieron pasar por humanos para infiltrarse entre la gente. 
+                            En este escenario de miedo y desconfianza, Cassie Sullivan,
+                            una adolescente de 16 años, trata de sobrevivir..." />
+                    </h:panelGrid>
+                </p:tab>
+                <p:tab title="El Mar Infinito Parte II">
+                    <h:panelGrid columns="2" cellpadding="10">
+                        <img src="imagenes/Mar Infinito2.png"/>
+                        <h:outputText value="La continuación de una de las novelas de ciencia ficción juveniles más esperadas.
+                                      Cassie no está dispuesta a dejarse vencer y para ello cuenta 
+                                      con insólitos aliados que le permitirán darle un dramático 
+                                      giro a los acontecimientos." />
+                    </h:panelGrid>
+                </p:tab>
+                <p:tab title="La Ultima Estrella Parte III">
+                    <h:panelGrid columns="2" cellpadding="10">
+                        <img src="imagenes/LaUltimaEstrella3.png"/>
+                        <h:outputText value="La última fase de la invasión está a punto de completarse, 
+                                      lloverán bombas sobre las ciudades. 
+                                      El fin de la especie humana está asegurado 
+                                      y Cassie y sus compañeros saben que ha llegado
+                                      el momento de escoger: entre el amor o el miedo, ..." />
+                    </h:panelGrid>
+                </p:tab>
+            </p:accordionPanel>
+
+            <h3>Change Event</h3>
+            <p:accordionPanel>
+                <p:ajax event="tabChange" listener="#{tabbedView.onTabChange}" update=":form:msgs" />
+                <p:ajax event="tabClose" listener="#{tabbedView.onTabClose}" update=":form:msgs" />
+
+                <p:tab title="La Quinta Ola  Parte I">
+                    <h:panelGrid columns="2" cellpadding="10">
+                        <img src="imagenes/QuintaOla1.png"/>
+                        <h:outputText
+                            value="Cuatro oleadas sucesivas de ataques cada vez 
+                            más mortíferos de alienígenas han dejado la mayor 
+                            parte de la Tierra diezmada. 
+                            La primera ola fue un apagón generalizado en todo el planeta, 
+                            la segunda fue la subida del oleaje,
+                            la tercera ola fue peste y 
+                            la cuarta ola fue cuando los otros (así le decían a los alienígenas)
+                            se hicieron pasar por humanos para infiltrarse entre la gente. 
+                            En este escenario de miedo y desconfianza, Cassie Sullivan,
+                            una adolescente de 16 años, trata de sobrevivir..." />
+                    </h:panelGrid>
+                </p:tab>
+                <p:tab title="El Mar Infinito Parte II">
+                    <h:panelGrid columns="2" cellpadding="10">
+                        <img src="imagenes/Mar Infinito2.png"/>
+                        <h:outputText value="La continuación de una de las novelas de ciencia ficción juveniles más esperadas.
+                                      Cassie no está dispuesta a dejarse vencer y para ello cuenta 
+                                      con insólitos aliados que le permitirán darle un dramático 
+                                      giro a los acontecimientos." />
+                    </h:panelGrid>
+                </p:tab>
+                <p:tab title="La Ultima Estrella Parte III">
+                    <h:panelGrid columns="2" cellpadding="10">
+                        <img src="imagenes/LaUltimaEstrella3.png"/>
+                        <h:outputText value="La última fase de la invasión está a punto de completarse, 
+                                      lloverán bombas sobre las ciudades. 
+                                      El fin de la especie humana está asegurado 
+                                      y Cassie y sus compañeros saben que ha llegado
+                                      el momento de escoger: entre el amor o el miedo, ..." />
+                    </h:panelGrid>
+                </p:tab>
+            </p:accordionPanel>
+
+            <h3>DataModel</h3>
+            <p:accordionPanel value="#{managedBeanVistaPestaña.cars}" var="car">
+                <p:tab title="Car - #{car.randomId}">
+                    <h:panelGrid columns="2" cellpadding="5">
+                        <f:facet name="header">
+                            <img src="imagenes/#{car.randomBrand}-big.gif" />
+                        </f:facet>                    
+                        <h:outputText value="Brand:" style="font-weight: bold" />
+                        <h:outputText value="#{car.randomBrand}" />
+
+                        <h:outputText value="Year:" style="font-weight: bold" />
+                        <h:outputText value="#{car.randomYear}" />
+
+                        <h:outputText value="Color:" style="font-weight: bold" />
+                        <h:outputText value="#{car.randomColor}" />
+                    </h:panelGrid>
+                </p:tab>
+            </p:accordionPanel>
+        </h:form>
+    </h:body>
+</html>
+

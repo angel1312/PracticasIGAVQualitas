@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+    <h:form>
+        <h:panelGrid columns="7" cellpadding="6">
+            <h:outputLabel for="dato1" value="Dato 1:" style="font-weight:bold" />
+            <p:inputText id="dato1" value="#{managedBeanCalculadora.dato1}" />
+            
+            <h:outputLabel for="dato2" value="Dato 2:" style="font-weight:bold" />
+            <p:inputText id="dato2" value="#{managedBeanCalculadora.dato2}" />
+            
+            <p:commandButton value="Sumar" actionListener="#{managedBeanCalculadora.sumar()}" 
+                             update="display" 
+                             icon="ui-icon-check" />
+            <p:commandButton value="Restar" actionListener="#{managedBeanCalculadora.restar()}" 
+                             update="display" 
+                             icon="ui-icon-check" />
+            <h:outputText id="display" value="#{managedBeanCalculadora.resultado}" />
+        </h:panelGrid>
+    </h:form>
+    </h:body>
+</html>
+
